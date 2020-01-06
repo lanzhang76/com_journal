@@ -8,9 +8,9 @@ pun generation with surprise
 * synset: a set of synonyms that share a common meaning.
 * hypernyms and hyponym
 
-> hypernyms - the word that has broader meaning and more specific words underneath 
-> hyponym - the more specific word
+> hypernyms - the word that has broader meaning and more specific words underneath <br>
+hyponym - the more specific word
 
 Wordnet exploration
-> Mophy for turning plural words to singular with inflectional ending rules
-> synsets("word", pos = '{n/v/a}').definition .examples()
+> Mophy for turning plural words to singular with inflectional ending rules <br>
+synsets("word", pos = '{n/v/a}').definition .examples()
