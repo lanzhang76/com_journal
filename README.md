@@ -9,7 +9,8 @@ pun generation with surprise
 * hypernyms and hyponym
 
 > hypernyms - the word that has broader meaning and more specific words underneath <br>
-hyponym - the more specific word
+hyponym - the more specific word <br>
+.closure(lambda s:s.hypernyms()) vs .closure(lambda s:s.hyponyms())
 
 Wordnet exploration
 > Mophy for turning plural words to singular with inflectional ending rules <br>
