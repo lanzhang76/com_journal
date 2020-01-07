@@ -1,4 +1,4 @@
-##### Jan6
+#### Jan6
 
 pun generation with surprise
 * global and local context
@@ -15,9 +15,9 @@ hyponym - the more specific word <br>
 Wordnet exploration
 > Mophy for turning plural words to singular with inflectional ending rules <br>
 synsets("word", pos = '{n/v/a}').definition .examples()
+<br>
 
-
-##### Jan7
+#### Jan7
 
 reading: https://reallifemag.com/definition-not-found/
 * asemic writing
@@ -31,7 +31,8 @@ allison parrish N-gram and Markov chain
 n-grams
 * character-level n-grams verus word-level n-grams
 
-re- regex - regular expression
+re- regex - regular expression - 
+clean corpus!
 * r"\." - raw text literal search
 * \. matches with every character except a new line
 * \d matches digital numbers  \D matches everything not a digit \d{3} means 3 of digits 
@@ -51,6 +52,7 @@ re- regex - regular expression
 > {3} exact number
 > {3,4} range from 3-4
 
+example1: capture the phone number
 ```
 text = '''
 324.235.153
@@ -60,7 +62,24 @@ matches = pattern.finditer(text)
 for match in matches:
 	print(match)
 ```
+example2: capture all the urls
+```
+urls = '''
+https://www.google.com
+http://coe.com
+https://youtube.com
+https://www.nasa.gov
+pattern = re.compile(r'https?://(www\.)?\w+\.\w'+)
+```
 
 * + \.(com|edu|net) or
+* match.group(1) accessing references in expressions 
+* substitution: outputs urls only with group 2 and 3 aka without "wwww."
+```
+sub = pattern.sub(r'\2\3',urls, re.IGNORECASE)
+```
+```
+sub = pattern.findall(r'\2\3',urls)
+```
 
 
