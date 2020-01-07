@@ -33,9 +33,10 @@ n-grams
 
 re- regex - regular expression - 
 clean corpus!
-* r"\." - raw text literal search
-* \. matches with every character except a new line
-* \d matches digital numbers  \D matches everything not a digit \d{3} means 3 of digits 
+|symbol| usage|
+* | r'\n' | raw text literal search |
+* | r'\\.' | matches with every character except a new line |
+* | \\d| matches digital numbers  \D matches everything not a digit \d{3} means 3 of digits | 
 * \w everything is lower, upper, underscore 
 * \s matches all spaces, new lines, tabs \S everything but
 * \b matches when there is a word boundary before 
