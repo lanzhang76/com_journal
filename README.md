@@ -33,24 +33,24 @@ n-grams
 
 re- regex - regular expression - 
 clean corpus!
-|symbol| usage|
-* | r'\n' | raw text literal search |
-* | r'\\.' | matches with every character except a new line |
-* | \\d| matches digital numbers  \D matches everything not a digit \d{3} means 3 of digits | 
+
+* r'\n' raw text literal search 
+* r'\\.' matches with every character except a new line 
+* \\d matches digital numbers  \D matches everything not a digit \d{3} means 3 of digits | 
 * \w everything is lower, upper, underscore 
 * \s matches all spaces, new lines, tabs \S everything but
 * \b matches when there is a word boundary before 
 * ^ at the start
 * $ end of the string
 * [-.,] only matches with what's in the square brackets. - or .; not all but one from the set
-* - represents range r'[a-zA-Z]' will be lower or upper
+* \- represents range r'[a-zA-Z]' will be lower or upper
 * [^b] negate b = ignore b 
 * quantifiers: 
 
-> * 0 or more <br>
-> + 1 or more <br>
-> ? 0 or one
-> {3} exact number
+> \* 0 or more <br>
+> \+ 1 or more <br>
+> ? 0 or one <br>
+> {3} exact number <br>
 > {3,4} range from 3-4
 
 example1: capture the phone number
@@ -73,7 +73,7 @@ https://www.nasa.gov
 pattern = re.compile(r'https?://(www\.)?\w+\.\w'+)
 ```
 
-* + \.(com|edu|net) or
+* \+ \\.(com|edu|net) or
 * match.group(1) accessing references in expressions 
 * substitution: outputs urls only with group 2 and 3 aka without "wwww."
 ```
@@ -82,5 +82,19 @@ sub = pattern.sub(r'\2\3',urls, re.IGNORECASE)
 ```
 sub = pattern.findall(r'\2\3',urls)
 ```
+
+<br>
+#### Jan8
+
+python fundamentals recap
+* iteration, mutability 
+
+markov chain 
+* n-grams functions
+* predict next word 
+* append to the current sentence
+* end-of-a-sentence detection
+* TODO: takes any input lenghth
+
 
 
