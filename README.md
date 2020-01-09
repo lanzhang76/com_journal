@@ -84,6 +84,7 @@ sub = pattern.findall(r'\2\3',urls)
 ```
 
 <br>
+
 #### Jan8
 
 python fundamentals recap
@@ -95,6 +96,16 @@ markov chain
 * append to the current sentence
 * end-of-a-sentence detection
 * TODO: takes any input lenghth
+* clamp function
+	- max(min_range, min(value,max_range))
+	- if it's smaller than the min, it's the bigger one whichi is the min
+	- if it's larger than the max, it's smaller then it takes itself 
+
+```
+def clamp(min_val,value,max_val):
+    num = max(min_val,min(value,max_val))
+    return num
+```
 
 
 
