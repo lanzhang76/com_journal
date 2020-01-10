@@ -1,6 +1,6 @@
-#### Jan6
+### Jan6
 
-pun generation with surprise
+#### pun generation with surprise
 * global and local context
 * retrieve and swap
 * part-of-speech tag - replaces alternative word
@@ -12,14 +12,14 @@ pun generation with surprise
 hyponym - the more specific word <br>
 .closure(lambda s:s.hypernyms()) vs .closure(lambda s:s.hyponyms())
 
-Wordnet exploration
+#### Wordnet exploration
 > Mophy for turning plural words to singular with inflectional ending rules <br>
 synsets("word", pos = '{n/v/a}').definition .examples()
 <br>
 
-#### Jan7
+### Jan7
 
-reading: https://reallifemag.com/definition-not-found/
+#### reading: https://reallifemag.com/definition-not-found/
 * asemic writing
 * Cross-linguistic onomatopoeias
 * Christine Sun kim - ASL and music score sheet
@@ -27,11 +27,11 @@ reading: https://reallifemag.com/definition-not-found/
 
 >  It’s a robot laughing alone with salad, and its inner life, its own well of lactic acid that it draws from to express itself, is off-limits to us.
 
-allison parrish N-gram and Markov chain 
+#### allison parrish N-gram and Markov chain 
 n-grams
 * character-level n-grams verus word-level n-grams
 
-re- regex - regular expression - 
+#### re- regex - regular expression - 
 clean corpus!
 
 * r'\n' raw text literal search 
@@ -85,12 +85,12 @@ sub = pattern.findall(r'\2\3',urls)
 
 <br>
 
-#### Jan8
+### Jan8
 
-python fundamentals recap
+#### python fundamentals recap
 * iteration, mutability 
 
-markov chain 
+#### markov chain 
 * n-grams functions
 * predict next word 
 * append to the current sentence
@@ -115,12 +115,12 @@ def clamp(min_val,value,max_val):
 
 <br>
 
-#### Jan9
+### Jan9
 
-regular expression for end of sentence
+#### regular expression for end of sentence
 * end of sentence - solved
 
-free-length parser
+#### free-length parser
 * abled to create a function that takes in any input length
 * the input is parsed and split into tuples
 * a new markov n-gram dictionary will be created based on the input length
@@ -129,14 +129,14 @@ free-length parser
 
 <br>
 
-#### Jan10
-marmarkov
+### Jan10
+#### marmarkov
 * turn it into a terminal program 
 * get more comedy transcripts for an output probability check
 * figure out metrics and quality control for the input 
 * create a function that loads a bunch of scripts
 
-another end of sentence detection 
+####another end of sentence detection 
 * line.strip().split() for line in file.readlines() => gets a list of lists of words
 ```
 for i in range(len(words)): 
