@@ -107,5 +107,42 @@ def clamp(min_val,value,max_val):
     return num
 ```
 
+* TODO: regex end of sentence check
+	- https://ftp.gnu.org/old-gnu/Manuals/emacs-lisp-intro/html_node/sentence-end.html
+	- test: https://www.regextester.com/
+	- test: https://pythex.org/
+
+
+<br>
+
+#### Jan9
+
+regular expression for end of sentence
+* end of sentence - solved
+
+free-length parser
+* abled to create a function that takes in any input length
+* the input is parsed and split into tuples
+* a new markov n-gram dictionary will be created based on the input length
+* if the current input has key values in the created dictionary, the word gets append to the sentence
+* if it doesn't, the firt word 
+
+<br>
+
+#### Jan10
+marmarkov
+* turn it into a terminal program 
+* get more comedy transcripts for an output probability check
+* figure out metrics and quality control for the input 
+* create a function that loads a bunch of scripts
+
+another end of sentence detection 
+* line.strip().split() for line in file.readlines() => gets a list of lists of words
+```
+for i in range(len(words)): 
+    seq = list(t[:] for t in words[i]) + [None]
+    print(seq)
+```
+
 
 
