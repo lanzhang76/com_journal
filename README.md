@@ -1,4 +1,4 @@
-### journal incentives
+## journal incentives
 
 This journal is used to document experimental progress on my thesis around "computational comedy" where I explore methodologies and rules for creating generative procedures and comic text.
 
