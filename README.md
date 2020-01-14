@@ -1,3 +1,7 @@
+### journal incentives
+This journal is used to document experimental progress on my thesis around "computational comedy" where I explore methodologies and rules for creating generative procedures and comic text.
+
+
 ### Jan6
 
 #### pun generation with surprise
@@ -146,6 +150,16 @@ for i in range(len(words)):
 
 #### bugs
 * needs to fix the filter words - "kinda like" needs to have the same "like"
+
+
+<br>
+
+### Jan14
+
+#### TO DOs:
+1. fix counter function 
+2. add/subtract style in the original corpus 
+3. book of shaders 
 
 
 
