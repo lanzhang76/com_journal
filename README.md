@@ -157,10 +157,23 @@ for i in range(len(words)):
 
 ### Jan14
 
-#### TO DOs:
-1. fix counter function 
-2. add/subtract style in the original corpus 
-3. book of shaders 
+mar markov continued:
+* fixed counter function 
+* created functions for adding/subtracting to a context dictionary
+* created function for turning context dictionary into a ready-to-markov text corpus
+* made a terminal bot that generate sentences from a selection of comedian
+
+next steps:
+* compile into one program
+	* compile generative functions into a big function
+
+* module 
+* a flask app
+	* main page 
+	* text area 
+	* check boxes trigger style 
+* what is a cookiecutter?
+
 
 
 
