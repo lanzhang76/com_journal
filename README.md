@@ -136,13 +136,16 @@ def clamp(min_val,value,max_val):
 * figure out metrics and quality control for the input 
 * create a function that loads a bunch of scripts
 
-####another end of sentence detection 
+#### another end of sentence detection 
 * line.strip().split() for line in file.readlines() => gets a list of lists of words
 ```
 for i in range(len(words)): 
     seq = list(t[:] for t in words[i]) + [None]
     print(seq)
 ```
+
+#### bugs
+* needs to fix the filter words - "kinda like" needs to have the same "like"
 
 
 
