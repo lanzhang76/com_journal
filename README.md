@@ -174,6 +174,11 @@ next steps:
 	* check boxes trigger style 
 * what is a cookiecutter?
 
+### Jan15
+
+* comedian input check
+*
+
 
 
 
