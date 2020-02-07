@@ -179,6 +179,12 @@ next steps:
 * comedian input check
 *
 
+### Feb7
+
+* Socket.io
+	* A simple chat bot that takes in user name and message
+	* client -> server -> broadcast/update to other clients	
+
 
 
 
