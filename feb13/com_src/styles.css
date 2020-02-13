@@ -1,0 +1,43 @@
+:root{
+    --purple:#9770EA;
+    --gray:#EDECEE;
+    --font:'Roboto Mono', monospace;
+    --module-height: 40vh;
+    --module-width: 22vw
+}
+
+body{
+    background-color: var(--gray);
+    text-align: center;
+    font-family: var(--font);
+}
+
+.write-form {
+    /* display: inline-block; */
+    text-align: left;
+    padding: 2vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: var(--module-width);
+    height: var(--module-height);
+    margin: 2vw auto;
+}
+
+textarea {
+    font-family: var(--font);
+    max-width: var(--module-width)*3/4;
+    max-height: var(--module-height)/7;
+    outline: none;
+  }
+
+.output_box{
+    margin-top: 1vh;
+    max-height: 23VH;
+    margin-bottom: 1vh;
+    overflow-y: scroll;
+}
+
+
+
+  

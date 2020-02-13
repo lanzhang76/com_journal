@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="com_src/styles.css">
+    <title>write tool</title>
+</head>
+
+<body>
+    <div class="write-form draggable" id="form1">
+        <div class="toggleable-elements">
+            <label>
+                <input type="radio" name="comedian" value="aziz" checked />
+                Aziz Ansari<br />
+            </label>
+            <p class="output" id="output1"></p><br />
+            <textarea id="input1" cols="40" rows="5" placeholder="Start typing here"></textarea>
+            <input type="submit" id="submit_button1" value="finish writing">
+
+        </div>
+    </div>
+
+    <div class="write-form draggable" id="form2">
+        <div class="toggleable-elements">
+            <label>
+                <input type="radio" name="comedian" value="ali" checked />
+                Ali Wong
+            </label>
+            <div class="output_box">
+                <p class="output" id="output2"></p>
+            </div>
+            <textarea id="input2" cols="40" rows="5" placeholder="Start typing here"></textarea>
+            <input type="submit" id="submit_button2" value="finish writing">
+
+        </div>
+    </div>
+
+    <div class="write-form draggable" id="battle_form" style="height: 20vh;">
+        <h3>Battle mode</h3>
+        <textarea id="battle_input" cols="40" rows="5"
+            placeholder="If you like to compare the different outputs, type here"></textarea>
+        <input type="submit" id="battle_button" value="finish writing">
+        <input type="button" id="clear_button" value="clear">
+    </div>
+
+    <script src="com_src/scripts/ali.js"></script>
+    <script src="com_src/scripts/aziz.js"></script>
+    <script src="com_src/markov.js"></script>
+    <script src="com_src/main.js"></script>
+    <script src="com_src/main2.js"></script>
+    <script src="com_src/battle.js"></script>
+
+</body>
+
+</html>

@@ -185,6 +185,17 @@ next steps:
 	* A simple chat bot that takes in user name and message
 	* client -> server -> broadcast/update to other clients	
 
+### Feb12
+
+* writing mode
+
+### Feb13
+
+* aziz and ali two writing modes
+* battle mode
+* basic html setup
+* draggable divs
+
 
 
 
