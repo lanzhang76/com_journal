@@ -1,5 +1,4 @@
-list = ['Aziz Ansari', 'Amy Wong']
-
+// //
 // compiling any length of markov model
 markovCount = (text, num) => {
     const textArr = text.split(' ');
@@ -42,7 +41,7 @@ nextWord = (sentence, text) => {
     }
     // randomly selects a word from the values
     var next_word = next_value[Math.floor(Math.random() * next_value.length)]
-    console.log(`${sentence} + ${next_word}`);
+    console.log(`${sentence} + ${next_word}`); //check output
     return next_word
 }
 
@@ -60,6 +59,4 @@ generateEnd = (current_sentence, text) => {
     return [trimmed, sen]
 }
 
-
-nextWord('I and', aziz)
 
